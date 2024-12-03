@@ -1,0 +1,145 @@
+html {
+  font-size: 62.5%;
+}
+.homePage {
+  padding: 0 10rem;
+}
+.downloadApp {
+  margin-bottom: 53px;
+}
+
+.searchContainer {
+  margin-bottom: 53px;
+}
+.exclusiveDealsContainer {
+  margin-bottom: 53px;
+}
+
+.categoryContainer {
+  margin-bottom: 53px;
+}
+
+.popularRestaurants {
+  margin-bottom: 53px;
+}
+
+.advertisementContainer {
+  margin-bottom: 53px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.knowAboutUsContainer {
+  margin-bottom: 53px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart {
+  position: relative;
+  margin: 50px auto;
+  width: 90%;
+  text-align: center;
+  z-index: 5000;
+}
+
+.cart h1,
+.cart p {
+  font-size: 1.8rem;
+  color: white;
+}
+
+.overlay {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1200%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.7
+  ); /* Dark transparent background */
+  z-index: 1500;
+  padding-top: 100px;
+}
+.overlay .cancelButton {
+  position: absolute;
+  cursor: pointer;
+  z-index: 5000;
+  width: 50px;
+  height: 50px;
+  transform: translate(170px, -40px);
+}
+@media screen and (max-width: 500px) {
+  .overlay .cancelButton {
+    position: absolute;
+    cursor: pointer;
+    z-index: 5000;
+    width: 50px;
+    height: 50px;
+    transform: translate(180px, -40px);
+  }
+}
+@media screen and (max-width: 1250px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .advertisementContainer {
+    height: 800px;
+    margin-top: 80px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .homePage {
+    padding: 0 5rem;
+  }
+
+  .headerDesktopContainer {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .homePage {
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .exclusiveDealsContainer {
+    margin-bottom: 30px;
+    height: 250px;
+  }
+  .searchContainer {
+    margin-bottom: 30px;
+  }
+  .downloadApp {
+    margin-bottom: 30px;
+  }
+  .popularRestaurants {
+    margin-bottom: 30px;
+  }
+  .advertisementContainer {
+    height: 476px;
+    margin-top: 55px;
+    margin-bottom: 44px;
+  }
+
+  .knowAboutUsContainer {
+    align-items: flex-start;
+  }
+}
